@@ -18,7 +18,7 @@
 
     /* Module Options */
     "module": "nodenext",
-    // "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"],
