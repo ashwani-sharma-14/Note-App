@@ -30,7 +30,7 @@ export const loginOtp = async (req: Request, res: Response) => {
     const { email } = req.body;
     const otp = Math.floor(100000 + Math.random() * 900000);
     const user = await User.findOne({ email });
-    if (!user) return res.status(404).json({ message: "User not found" });
+    if (!user) return res.status(200).json({ message: "User not found" });
     sendSignupCode(email, otp);
     await Otp.create({
       email: email,
