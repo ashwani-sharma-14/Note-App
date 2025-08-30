@@ -1,3 +1,4 @@
+import { envConfig } from "@/config/env.config.js";
 import { Response } from "express";
 
 export const setAuthCookie = (
@@ -6,11 +7,11 @@ export const setAuthCookie = (
   message: string,
   user?: any
 ) => {
-  const isProduction = process.env.NODE_ENV === "production";
+  const isProduction = envConfig.nodeEnv === "production";
   res.cookie("accessToken", accessToken, {
     httpOnly: false,
     secure: isProduction,
-    sameSite: isProduction? "none" : "lax",
+    sameSite: isProduction ? "none" : "lax",
     maxAge: 15 * 60 * 1000,
   });
 

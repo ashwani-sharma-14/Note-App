@@ -13,4 +13,5 @@ export const envConfig = {
   mailerPassword: process.env.MAILER_PASSWORD,
   mailerService: process.env.MAILER_SERVICE,
   from: process.env.FROM,
+  nodeEnv: process.env.NODE_ENV,
 };
