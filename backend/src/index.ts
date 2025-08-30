@@ -8,7 +8,7 @@ import noteRouter from "./routes/note.js";
 const app = express();
 
 const corsOption = {
-  origin: "http://localhost:5173",
+  origin: "https://note-app-xi-mocha.vercel.app",
   credentials: true,
 };
 app.use(cors(corsOption));

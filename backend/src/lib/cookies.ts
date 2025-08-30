@@ -10,7 +10,7 @@ export const setAuthCookie = (
   res.cookie("accessToken", accessToken, {
     httpOnly: false,
     secure: isProduction,
-    sameSite: "lax",
+    sameSite: isProduction? "none" : "lax",
     maxAge: 15 * 60 * 1000,
   });
 
