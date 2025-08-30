@@ -1,6 +1,6 @@
 import jwt, { SignOptions } from "jsonwebtoken";
-import { setAuthCookie } from "./cookies";
-import { envConfig } from "@/config/env.config";
+import { setAuthCookie } from "./cookies.js";
+import { envConfig } from "@/config/env.config.js";
 import { Response } from "express";
 
 const accessTokenSecret = envConfig.jwtSecret as string;

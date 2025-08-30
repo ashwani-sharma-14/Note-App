@@ -1,5 +1,5 @@
-import { transporter } from "@/config/nodemailer.config";
-import { envConfig } from "@/config/env.config";
+import { transporter } from "@/config/nodemailer.config.js";
+import { envConfig } from "@/config/env.config.js";
 export const loginOtp = async (email: string, name: string, code: number) => {
   const emailInfo = await transporter.sendMail({
     from: `${envConfig.from}<${envConfig.mailerEmail}>`,
@@ -32,7 +32,6 @@ export const sendSignupCode = async (email: string, code: number) => {
     subject: "Welcome to Note App",
     html: `
   <div style="font-family: Arial, sans-serif; color: #333; padding: 20px;">
-    <h2 style="color: #cc0000;">Password Reset Request</h2>
 
     <p>Dear User,</p>
 

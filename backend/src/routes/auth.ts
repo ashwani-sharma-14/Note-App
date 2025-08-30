@@ -6,7 +6,7 @@ import {
   logout,
   signUP,
   signUpOtp,
-} from "../controllers/authController";
+} from "@/controllers/authController.js";
 
 const AuthRouter = Router();
 

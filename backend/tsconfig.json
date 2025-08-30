@@ -3,12 +3,11 @@
     /* Base Options */
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "ES2022",
+    "target": "esnext",
     "allowJs": true,
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
-
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
@@ -18,8 +17,8 @@
     "strictBindCallApply": true,
 
     /* Module Options */
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "nodenext",
+    // "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"],

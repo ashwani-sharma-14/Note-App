@@ -1,10 +1,10 @@
-import { User } from "@/model/user";
+import { User } from "@/model/user.js";
 import type { Response, Request } from "express";
-import { sendSignupCode } from "@/lib/emailService";
-import { Otp } from "@/model/otp";
-import { generateTokens } from "@/lib/auth";
-import { setAuthCookie } from "@/lib/cookies";
-import { oauth2Client } from "@/config/google.config";
+import { sendSignupCode } from "@/lib/emailService.js";
+import { Otp } from "@/model/otp.js";
+import { generateTokens } from "@/lib/auth.js";
+import { setAuthCookie } from "@/lib/cookies.js";
+import { oauth2Client } from "@/config/google.config.js";
 import axios from "axios";
 export const signUpOtp = async (req: Request, res: Response) => {
   try {

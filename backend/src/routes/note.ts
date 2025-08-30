@@ -3,8 +3,8 @@ import {
   createNote,
   getNotes,
   deleteNote,
-} from "../controllers/noteController";
-import { authenticateToken } from "@/middleware/auth";
+} from "@/controllers/noteController.js";
+import { authenticateToken } from "@/middleware/auth.js";
 const noteRouter = Router();
 
 noteRouter.use(authenticateToken);

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { verifyJWT, TokenPayload } from "@/lib/auth";
+import { verifyJWT, TokenPayload } from "@/lib/auth.js";
 
 declare global {
   namespace Express {
